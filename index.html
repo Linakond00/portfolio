@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ангелина Кондурова | Графический и веб-дизайнер</title>
+    
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Unbounded:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Фоновые градиентные элементы -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Шапка (Навигация) -->
+    <header class="navbar glass">
+        <div class="logo">Лина-portfolio</div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#home">О себе</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <button class="theme-btn" id="themeToggle">☀️</button>
+        </div>
+    </header>
+
+    <!-- Главная секция (Совмещенный текст О себе + Фото) -->
+    <section id="home">
+        <div class="hero-content reveal">
+            <div class="hero-text">
+                <h1>Привет, я Ангелина</h1>
+                <h2>Графический и веб-дизайнер</h2>
+                
+                <p class="hero-description">
+                    Студентка 2-го курса СПбГУПТД (Промтехдизайн), направление 09.03.03 «Прикладная информатика».
+                </p>
+                <p class="hero-description profile-text">
+                    Мой профиль — «IT-технологии создания цифрового контента». Стремлюсь создавать не просто красивые, но и функциональные, удобные интерфейсы, опираясь на современные стандарты веб-разработки, медиадизайна и UI/UX.
+                </p>
+
+                <div class="btn-group">
+                    <a href="#contacts"><button class="btn btn-primary">Связаться</button></a>
+                    <a href="#portfolio"><button class="btn btn-outline">Смотреть работы</button></a>
+                </div>
+            </div>
+            
+            <div class="hero-image-wrapper glass">
+                <img src="images/portfolio-photo.jpg" alt="Ангелина Кондурова">
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 1: Навыки (Отдельный блок, 6 карточек для ровной сетки) -->
+    <section id="skills">
+        <h2 class="section-title reveal">Ключевые навыки</h2>
+        <div class="skills-grid reveal">
+            <div class="skill-card glass">Разработка цифрового контента и мультимедийных систем</div>
+            <div class="skill-card glass">Веб-дизайн и UI/UX проектирование</div>
+            <div class="skill-card glass">Компьютерная графика и обработка медиаданных</div>
+            <div class="skill-card glass">Программирование и веб-технологии (Frontend)</div>
+            <div class="skill-card glass">Информационные технологии в медиаиндустрии</div>
+            <div class="skill-card glass">Анимация, 3D-графика и интерактивный контент</div>
+        </div>
+    </section>
+
+    <!-- Портфолио (Карусель) -->
+    <section id="portfolio">
+        <h2 class="section-title reveal">Мои проекты</h2>
+        <div class="carousel-container glass reveal">
+            <button class="carousel-btn btn-prev">❮</button>
+            <button class="carousel-btn btn-next">❯</button>
+            
+            <div class="carousel-track">
+                <!-- Карточка 1 -->
+                <div class="carousel-slide">
+                    <img src="https://via.placeholder.com/800x400?text=Проект+1" alt="Проект 1">
+                    <h3>UI/UX Концепт приложения</h3>
+                    <p>Проектирование пользовательского интерфейса с использованием Figma и принципов Glassmorphism.</p>
+                    <p style="color: var(--accent-blue); font-size: 0.9rem; margin-top: 10px;">#Figma #UI #UX</p>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="carousel-slide">
+                    <img src="https://via.placeholder.com/800x400?text=Проект+2" alt="Проект 2">
+                    <h3>Верстка Landing Page</h3>
+                    <p>Адаптивная верстка страницы для бизнеса с использованием современных стандартов.</p>
+                    <p style="color: var(--accent-blue); font-size: 0.9rem; margin-top: 10px;">#HTML5 #CSS3 #JS</p>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="carousel-slide">
+                    <img src="https://via.placeholder.com/800x400?text=Проект+3" alt="Проект 3">
+                    <h3>Оформление цифрового контента</h3>
+                    <p>Комплексная работа с компьютерной графикой и типографикой для соцсетей.</p>
+                    <p style="color: var(--accent-blue); font-size: 0.9rem; margin-top: 10px;">#Photoshop #Illustrator #Design</p>
+                </div>
+            </div>
+            
+            <div class="carousel-nav">
+                <div class="dot active" data-index="0"></div>
+                <div class="dot" data-index="1"></div>
+                <div class="dot" data-index="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts">
+        <h2 class="section-title reveal">Связаться со мной</h2>
+        <div class="contact-links reveal">
+            <!-- Ссылка на Telegram -->
+            <a href="https://t.me/Iina_kond" target="_blank" rel="noopener noreferrer" class="contact-card glass">Telegram</a>
+
+            <!-- Ссылка на GitHub -->
+            <a href="https://github.com/Linakond00" target="_blank" rel="noopener noreferrer" class="contact-card glass">GitHub</a>
+
+            <!-- Ссылка на Email -->
+            <a href="mailto:kondurova.2006@mail.ru" class="contact-card glass">Email</a>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        Создано с помощью Gemini © 2026 Кондурова Ангелина. СПбГУПТД
+    </footer>
+
+    <!-- Подключение скриптов -->
+    <script src="script.js"></script>
+</body>
+</html>
